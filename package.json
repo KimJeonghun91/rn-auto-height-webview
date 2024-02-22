@@ -1,0 +1,52 @@
+{
+  "name": "rn-auto-height-webview",
+  "version": "0.0.1",
+  "description": "react native auto height webview",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .tsx --ext .ts src/",
+    "format": "prettier --check ./src",
+    "prepare": "rm -rf dist && tsc",
+    "start": "cd Develop && react-native start",
+    "android": "cd Develop && react-native run-android",
+    "ios": "cd Develop && react-native run-ios",
+    "build:npm": "rm -rf Develop/dist && tsc -w --outDir Develop/dist",
+    "publish:npm": "npm publish"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-webview": "*"
+  },
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "@react-native/babel-preset": "*",
+    "@react-native/metro-config": "*",
+    "@react-native/typescript-config": "*",
+    "eslint": "6.8.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.1",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.9",
+    "prettier": "2.0.2",
+    "react": "*",
+    "react-native": "*",
+    "typescript": "5.0.4"
+  },
+  "keywords": [
+    "react-native",
+    "webview",
+    "autoheight"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KimJeonghun91/rn-auto-height-webview"
+  },
+  "author": "KimJeonghun91",
+  "license": "ISC"
+}
