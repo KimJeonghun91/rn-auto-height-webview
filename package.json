@@ -1,6 +1,6 @@
 {
   "name": "rn-auto-height-webview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react native auto height webview",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,10 +8,10 @@
     "lint": "eslint --ext .tsx --ext .ts src/",
     "format": "prettier --check ./src",
     "prepare": "rm -rf dist && tsc",
-    "start": "cd Develop && react-native start",
-    "android": "cd Develop && react-native run-android",
-    "ios": "cd Develop && react-native run-ios",
-    "build:npm": "rm -rf Develop/dist && tsc -w --outDir Develop/dist",
+    "start": "cd Example && react-native start",
+    "android": "cd Example && react-native run-android",
+    "ios": "cd Example && react-native run-ios",
+    "build:npm": "rm -rf Example/dist && tsc -w --outDir Example/dist",
     "publish:npm": "npm publish"
   },
   "peerDependencies": {
